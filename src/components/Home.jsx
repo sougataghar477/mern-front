@@ -1,7 +1,7 @@
 import {  useEffect } from "react"
 export default function Home(){
     useEffect(()=>{
-        fetch('https://back-3gblka608-sougataghar477s-projects.vercel.app/home', {
+        fetch('https://back-nine-zeta.vercel.app/home', {
             credentials: 'include'
           })
         .then(r => r.json())
