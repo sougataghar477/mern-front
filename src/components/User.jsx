@@ -4,7 +4,7 @@ export default function User(){
     const { id } = useParams();
     let [response,setResponse]=useState('');
       useEffect(() => {
-        fetch('/api/users/'+id)
+        fetch('/api/users/'+id,{ credentials: 'include' })
           .then(r => r.json())
           .then(data => setResponse(data.id))
           .catch(err => console.error('Fetch error:', err)); // ✅ Always good to include
