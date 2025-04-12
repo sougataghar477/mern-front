@@ -5,8 +5,8 @@
         "destination": "https://mern-back-production-aab8.up.railway.app/:path*"
       },
       {
-        "source": "/users/:id",
-        "destination": "https://mern-back-production-aab8.up.railway.app/users/:id"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }
