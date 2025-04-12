@@ -1,7 +1,7 @@
 import {  useEffect } from "react"
 export default function Home(){
     useEffect(()=>{
-        fetch('https://mern-back-production-aab8.up.railway.app/home', {
+        fetch('/api/home', {
             credentials: 'include',
             mode:'cors'
           })
