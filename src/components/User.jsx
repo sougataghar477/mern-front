@@ -4,7 +4,7 @@ export default function User(){
     const { id } = useParams();
     let [response,setResponse]=useState('');
       useEffect(() => {
-        fetch('/api/users/'+id)
+        fetch('https://back-3gblka608-sougataghar477s-projects.vercel.app/users/'+id)
           .then(r => r.json())
           .then(data => setResponse(data.id))
           .catch(err => console.error('Fetch error:', err)); // ✅ Always good to include
